@@ -13,8 +13,7 @@ public class StudentMapper  implements RowMapper <Student>{
         Student user=new Student();
         int id=rs.getInt(1);
         String name=rs.getString(2);
-       int grade=rs.getInt(3);
-       
+       int grade=rs.getInt(3);  
         user.setId(id);
         user.setName(name);
         user.setGrade(grade);

@@ -99,7 +99,7 @@
           <button>Delete</button>
           </form>
           </td>
-            </td>
+           
         </tr>
         <%} %>
     </tbody>

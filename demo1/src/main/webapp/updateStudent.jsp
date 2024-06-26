@@ -17,6 +17,6 @@
      <label for="grade">Grade:</label>
      <input type="number" id="grade" name="grade" class="but" required>
     <button>Update</button>
-</form>
+ </form>
 </body>
 </html>

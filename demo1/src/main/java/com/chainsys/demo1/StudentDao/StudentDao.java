@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import com.chainsys.demo1.model.Student;
 
-//public class StudentDao {
+
 	@Repository
 	public interface StudentDao{
 		
