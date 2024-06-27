@@ -11,8 +11,7 @@
 .card{
 position: absolute;
     left: 37%;
-    text-align: center;
-    
+    text-align: center;  
     top: 353px;
 }
 img.img2 {

@@ -11,7 +11,7 @@
     int id=Integer.parseInt(request.getParameter("id"));
 %>
 <h2>Update User</h2>
-<form action="/update" method="post">
+ <form action="/update" method="post">
     <label>Id</label>
     <input type="number" name="id" value="<%=id %>" readonly><br><br>
      <label for="grade">Grade:</label>

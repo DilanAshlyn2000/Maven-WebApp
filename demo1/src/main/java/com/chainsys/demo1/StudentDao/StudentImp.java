@@ -14,8 +14,7 @@ public class StudentImp {
 
 @Autowired	
 JdbcTemplate jdbcTemplate;
-StudentMapper mapper;
-   
+StudentMapper mapper;  
     public void insertUser(Student user) {
         String save="insert into users(name, grade) values (?, ?)";
         Object[] params= {user.getName(), user.getGrade()};

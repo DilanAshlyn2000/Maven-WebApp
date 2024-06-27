@@ -35,7 +35,7 @@ public String Read() {
     public String home() {
         System.out.println("Home Page");
         return "register.jsp";
-    }
+     }
     @GetMapping("/register")
     public String saveUser(@RequestParam("name") String name, @RequestParam("grade") Integer grade) {
         Student user = new Student();
