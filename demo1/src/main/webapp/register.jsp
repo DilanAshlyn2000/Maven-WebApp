@@ -104,6 +104,7 @@ body {
     border: 2px solid grey;
     }
 </style>
+
 <body>
 
 <div class="form-container">
@@ -111,21 +112,36 @@ body {
 		<h2>
 			<font color="#e57a97">REGI</font><font color="#74ab4f">STER</font></h2>
 	</div>
-    
     <form action="/register" method="get">
     <div class="text5">
         <div class="form-group">
            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter Name" class="but" required>
+            <input type="text" id="name" name="name" placeholder="Enter Name" class="but" pattern="[A-Za-z\s]{2,30}"   required>
         </div>
         <div class="form-group">
    <label for="grade">Grade:</label>
-  <input type="number" id="grade" name="grade" class="but" required>
+  <input type="number" id="grade" name="grade" class="but" min="1" max="10" required>
         </div>
         </div>
-        <button type="submit" class="btn-submit">REGISTER</button>
+        <button type="submit" class="btn-submit" onclick="validation()" >REGISTER</button>
     </form>
 </div>
-
+<script type="text/javascript">
+function validation(){
+	var name=document.getElementById("name");
+var grade=document.getElementById("grade");
+if(!name.checkValidity())
+{
+    alert("Name should be alphabet.");
+    return;
+}
+if(!grade.checkValidity())
+{
+    alert("Grade should be from 1-10");
+    return;
+}
+}
+</script>
 </body>
+
 </html>

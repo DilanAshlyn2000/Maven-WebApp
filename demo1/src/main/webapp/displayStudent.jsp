@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-     <%@ page import="com.chainsys.demo1.model.Student" %>
+    <%@ page import="com.chainsys.demo1.model.Student" %>
     <%@ page import="java.util.List" %>
-     <%@ page import="java.util.ArrayList" %>
+    <%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,6 +67,12 @@
 
 <body>
 <h1>User Details</h1>
+<form action="/search" method="GET">
+       
+        <input type="text" id="searchTerm" name="name" placeholder="Enter name...">
+        <button>Search</button>
+    </form>
+
 <table>
     <thead>
     <tr>
@@ -103,5 +109,6 @@
         <%} %>
     </tbody>
 </table>
+
 </body>
 </html>

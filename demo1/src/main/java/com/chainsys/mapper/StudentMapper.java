@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 import com.chainsys.demo1.model.Student;
 public class StudentMapper  implements RowMapper <Student>{
-@Override
+	@Override
     public Student mapRow(ResultSet rs, int rowNum) throws SQLException 
     {
         Student user=new Student();

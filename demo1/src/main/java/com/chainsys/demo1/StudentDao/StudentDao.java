@@ -9,15 +9,10 @@ import com.chainsys.demo1.model.Student;
 	@Repository
 	public interface StudentDao{
 		
-	public void save(Student saveUser);
-	
-	public int update(Student u1);
-	
-	public List<Student> listUsers();
-	
-	public Student findOne(Integer userId);
-	
-	public String findById(Integer userId);
-	
+		 public void insertUser(Student user) ;
+		 public List<Student> getAllUsers();
+		 public void update(Student user);
+		 public void delete(Student user) ;
+		 public List<Student> search(String name);	  
 
 }

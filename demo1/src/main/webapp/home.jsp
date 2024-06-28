@@ -38,8 +38,8 @@ h2 {
   <button class="button1" type="submit">VIEW</button>
   </form>
   </div>
-  <img
+<img
 		src="https://cdn.pixabay.com/photo/2013/07/02/22/20/bouquet-142876_1280.jpg"
-		alt="image"  class="img2">
+		alt="image"  class="img2"> 
 </body>
 </html>
